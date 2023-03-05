@@ -1,0 +1,730 @@
+<repository name="org.eclipse.wb.releng.updatesite" type="org.eclipse.equinox.p2.artifact.repository.simpleRepository" version="1">
+  <properties size="4">
+    <property name="publishPackFilesAsSiblings" value="true"/>
+    <property name="p2.compressed" value="true"/>
+    <property name="p2.timestamp" value="1666526673323"/>
+    <property name="pgp.publicKeys" value="-----BEGIN PGP PUBLIC KEY BLOCK-----&#10;&#10;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&#10;5D0/rIoMUHlOPyk/bz9ZrZp5qlBt7M9l7BBP&#10;=ZVEV&#10;-----END PGP PUBLIC KEY BLOCK-----&#10;"/>
+  </properties>
+  <mappings size="5">
+    <rule filter="(&amp; (classifier=osgi.bundle) (format=packed))" output="${repoUrl}/plugins/${id}_${version}.jar.pack.gz"/>
+    <rule filter="(&amp; (classifier=osgi.bundle))" output="${repoUrl}/plugins/${id}_${version}.jar"/>
+    <rule filter="(&amp; (classifier=binary))" output="${repoUrl}/binary/${id}_${version}"/>
+    <rule filter="(&amp; (classifier=org.eclipse.update.feature) (format=packed))" output="${repoUrl}/features/${id}_${version}.jar.pack.gz"/>
+    <rule filter="(&amp; (classifier=org.eclipse.update.feature))" output="${repoUrl}/features/${id}_${version}.jar"/>
+  </mappings>
+  <artifacts size="53">
+    <artifact classifier="osgi.bundle" id="org.eclipse.wb.core.databinding" version="1.9.1.202210231159">
+      <properties size="9">
+        <property name="artifact.size" value="319094"/>
+        <property name="download.size" value="319094"/>
+        <property name="maven-groupId" value="org.eclipse.wb"/>
+        <property name="maven-artifactId" value="org.eclipse.wb.core.databinding"/>
+        <property name="maven-version" value="1.9.1-SNAPSHOT"/>
+        <property name="maven-type" value="eclipse-plugin"/>
+        <property name="download.md5" value="cad0ae623f5db9e64e0231859135ee53"/>
+        <property name="download.checksum.md5" value="cad0ae623f5db9e64e0231859135ee53"/>
+        <property name="download.checksum.sha-256" value="73db53ff2d8ac2388a3f571fc23bea7c86a0ff05414732c28f696f3bd4506c1e"/>
+      </properties>
+    </artifact>
+    <artifact classifier="osgi.bundle" id="org.eclipse.wb.swing.FormLayout.lib" version="1.9.1.202210231159">
+      <properties size="9">
+        <property name="artifact.size" value="424217"/>
+        <property name="download.size" value="424217"/>
+        <property name="maven-groupId" value="org.eclipse.wb"/>
+        <property name="maven-artifactId" value="org.eclipse.wb.swing.FormLayout.lib"/>
+        <property name="maven-version" value="1.9.1-SNAPSHOT"/>
+        <property name="maven-type" value="eclipse-plugin"/>
+        <property name="download.md5" value="5eadcf63873ca2d4ab02152ee292affe"/>
+        <property name="download.checksum.md5" value="5eadcf63873ca2d4ab02152ee292affe"/>
+        <property name="download.checksum.sha-256" value="7b0d489b39d5326e26f20ced33757a74e26a595499e394e3b8f6122413e03241"/>
+      </properties>
+    </artifact>
+    <artifact classifier="org.eclipse.update.feature" id="org.eclipse.wb.rcp.feature" version="1.11.0.202210231159">
+      <properties size="10">
+        <property name="artifact.size" value="33895"/>
+        <property name="download.size" value="33895"/>
+        <property name="maven-groupId" value="org.eclipse.wb"/>
+        <property name="maven-artifactId" value="org.eclipse.wb.rcp.feature"/>
+        <property name="maven-version" value="1.11.0-SNAPSHOT"/>
+        <property name="maven-type" value="eclipse-feature"/>
+        <property name="download.contentType" value="application/zip"/>
+        <property name="download.md5" value="196c55ed244a9af111fc6dba80e1ac0e"/>
+        <property name="download.checksum.md5" value="196c55ed244a9af111fc6dba80e1ac0e"/>
+        <property name="download.checksum.sha-256" value="94ad567c2a1e8d930a862534c29eafe199a6f0bca3b7f397c9007de677dbed73"/>
+      </properties>
+    </artifact>
+    <artifact classifier="osgi.bundle" id="org.eclipse.wb.swing" version="1.9.1.202210231159">
+      <properties size="9">
+        <property name="artifact.size" value="1515498"/>
+        <property name="download.size" value="1515498"/>
+        <property name="maven-groupId" value="org.eclipse.wb"/>
+        <property name="maven-artifactId" value="org.eclipse.wb.swing"/>
+        <property name="maven-version" value="1.9.1-SNAPSHOT"/>
+        <property name="maven-type" value="eclipse-plugin"/>
+        <property name="download.md5" value="53c8eb7eec44c1dde1d8ba0207f3d451"/>
+        <property name="download.checksum.md5" value="53c8eb7eec44c1dde1d8ba0207f3d451"/>
+        <property name="download.checksum.sha-256" value="e956990e5e0c6f894271f4c516171a3cd0f4b971dc8b2bcdfd4fa35b1a804c55"/>
+      </properties>
+    </artifact>
+    <artifact classifier="osgi.bundle" id="org.apache.commons.commons-beanutils" version="1.9.4">
+      <properties size="12">
+        <property name="maven-groupId" value="commons-beanutils"/>
+        <property name="maven-artifactId" value="commons-beanutils"/>
+        <property name="maven-version" value="1.9.4"/>
+        <property name="maven-repository" value="eclipse.maven.central.mirror"/>
+        <property name="maven-type" value="jar"/>
+        <property name="download.size" value="246918"/>
+        <property name="artifact.size" value="246918"/>
+        <property name="download.md5" value="07dc532ee316fe1f2f0323e9bd2f8df4"/>
+        <property name="download.checksum.md5" value="07dc532ee316fe1f2f0323e9bd2f8df4"/>
+        <property name="download.checksum.sha-256" value="7d938c81789028045c08c065e94be75fc280527620d5bd62b519d5838532368a"/>
+        <property name="pgp.signatures" value="-----BEGIN PGP SIGNATURE-----&#10;&#10;iQIzBAABCAAdFiEEHqdRPin06Yc3+ETKmQpRd/cMpFYFAmNVLdQACgkQmQpRd/cM&#10;pFZt4g/+PLOixZ86NbkWxwDpLKX5WK+fLUTC2qNb/5vx/XDCzaxswBNhELCXV/Hl&#10;C8xpncsgqdHSJQRGs748Kvo2xoVuiVFI9XWOszOY6dcZnQLRz4UZxOzljEDtRKyo&#10;SSYKyCmKglzd5G6VUjO7dq2qJ+jbW5GC+ADEH4kUlLMINECJi4EVNNH/AjsreVe6&#10;b4QwEGot/bwwI8p0nFwKiyk+IGo1RrH+bTPkqs2b7ky4Wivo3COudi4IkEp+CcQT&#10;MM2nsEcZURbnTpPccy9sYioxC2AnOq92f/kvAxfLhKFJbRuhT0tXEPhapHbkgacu&#10;Gc200UjpmrJQEEApOxv5ExY1aqWcdFxEMCHQ7A5cJCMpBHvFZoHTl++G3JoGD+zq&#10;KWdniANi+xz39H8b9gCrANMNXZeJvE/yD8RRJ32fGpL9hvFAJuXy/pZ+nZSGX1Wm&#10;Nk7RzfNUZ4aNkL+P2273Xm6JjmcReZB3keE19fqG1doTKrBzJDWjV6Z08yP+Xojs&#10;j7haxyQkuQCxvzr9ZqoPEh6p++5mMS8Sbj8IkAeFE4aJEoTY5RA58tbvvdkXHHE5&#10;4pRpvfbZ+rgJ7YjkNEfP503DBhuZO3fwBk+8mwrdL1btAYLPRm1jezpyT1cnlWSr&#10;d2GUcq7DkfosFWG9ui4SaApQNR4RPWq5HYxQLRb00olTAnN2dmg=&#10;=+9UT&#10;-----END PGP SIGNATURE-----&#10;"/>
+        <property name="pgp.publicKeys" value="-----BEGIN PGP PUBLIC KEY BLOCK-----&#10;&#10;mQINBGLNWKoBEAC+JsmdbutiUbLX0jaUd1EBs5PH743yCgo+QP1ZDgBb0k/vzaDr&#10;OzqcmK+DMvkTnnqX9ZlTr2Hr3KK3dDrOSCWVmpq/Eg4L47D8WkcLbn74EtSkb85Z&#10;B4fRub9A3lfd4L9p6uf4ug8A43EID4rwYBaURaiHGZP0L+ZFjl6senlXlb6diPry&#10;0pT5zHtfLFcEElN+VsBxefFz0HkICjz1BkUcFgmILe20RNsej+QauMgD1L4TlU9a&#10;cdhDtoIQKoMaThkYLAPbLeZD0ZksI3YOTla0TzoDLgvP9gthFYFwbzS9lhTeBaVK&#10;C7EhugEzHTNO613VZdjNnulvmhACG6QB+vRUWWLd1JQq128hsqe7zFUimfPs73TC&#10;nYONiyVd0ogLBo9IAjyslw9i+ickPeRnmG7zdvJdUL7HVfMsKkZAkSSqge43s4YW&#10;pp9kgmqjXuqjPEUAQS1JTZ5NA5j4yiH/uVEnfevMBv1v9I1DM8y4mog1kJZsPURh&#10;3IIwctqoclMK4pKTKZoQgMHS9bVoZdKnHoS2rEUgw1AOo+ncgYtFGkZvVYdT7vUj&#10;Hk8Y5PUmW6kNUix9bTCXGGjGlykD42d3dAliamCy82yumwPltCw9lIcrn7w0lPpk&#10;byMsbopIeWUud3jg9ox0dhDICZE2kDYy84dpY/KV7ZyC3Wb6L8sn5iDNewARAQAB&#10;tD1FY2xpcHNlIFdpbmRvd0J1aWxkZXIgUHJvamVjdCA8d2luZG93YnVpbGRlci1k&#10;ZXZAZWNsaXBzZS5vcmc+iQJUBBMBCAA+FiEEhiR1WWnVEFD/SjQTfsRI2HT/RvQF&#10;AmLNWKoCGy8FCQlmAYAFCwkIBwMFFQoJCAsFFgIDAQACHgECF4AACgkQfsRI2HT/&#10;RvRt6g/9G8E8kLh5E+C34lTl4w9G1gW6IkHYI33pM8dRBTu2VwgxpWycdLQtPks7&#10;uUbAdVvG8nqMbENr7l8LljoN5n4I67VNQUeYgXrZjMhw8OUE+HFaPDbZpkHZRIeD&#10;n6TYcLiGAYW4AcgMr0YIoyDpDV+eOrE9UtTp/hFZ9QQioaeaHCIUgHVb564UMibq&#10;ell0ee3LmThm4aTCKAbUhHSU1A75/tac4EaqsgJbNEr1MNuI/sWXE7Mj7PskBMQC&#10;6+FOqYEmf43sk2eEefGX0zrzOe5PUb9445s2Db3n3kToERms717e/h9NzhhrIOLc&#10;oZEJ5i+1+Ss3UEcwWH0/Tm9IMxNPfFSbXKvjXziGRTZM28vd5IFHx4Edgl98dXvS&#10;ResvvgVIHEmRLQGNyO/GyORNZpFniqCAj5Sv1pR570HpKY70UXE+22VE4ceYDJoh&#10;McdBltWRVUgDhe6X39II/J5zqKnQGJgvlQmyEZSSNa0TTadmH36SKdtGqzypaNmw&#10;7OvwXH+RuGATvx4x7/gqVHH9l+XdvVjyE6cfbE3+qfx6jtguDgCM5eSPfdrXXrnr&#10;7e/n38pQtBURMmF0t3pqAiojSYD2gu4gOQaQUsD778z6C2aufTUGjB5I4YmTKb2J&#10;8RUMNVQZH5YN4eeoUJxIhyE7F9qmi/RhFN9AYk9QiHSLP7El8Fq5Ag0EYs1YtwEQ&#10;AKc4ZQF0yaVaqoZTqpkZkd5Su2xswoz2XV5mQkChwJcHQdB1hz7pOaXVGqVbwcRz&#10;MzZCSQJ5+1qbdrL3pI3quszgBDRgHBAL6eXLDaECJjB2PJvFjMGpuX6qLM3YTzpV&#10;nCLusQ3LMqItAu9ERDTHz+Uay4JqKuLRyhk0FKknoRQtqimbithHtto+rUkZagij&#10;aIMgddRf6buKVMmI5v9H/KuBFnJMnNh7vLcA3+vJ96o0eGjuz1sujjq1OXl0zFaT&#10;oqLjb3fSyeWMhhCxdCu9sWtk103pKt5cDtOknvILQNSijjLh9TG4Iv5vKvbKywNP&#10;NJcxpLscavL47igBJ0ITrh1WK75Iiqh4oMXJGCaH6NEJBN1wVHDpVhDDeIpqVPPK&#10;G+sJqcBZ45dAEL/nfmosCB5YzEbSDSETP/mjLS6WQ/Wy/+/xdHWMk8krJ0GtcpMI&#10;hkItXzfgbU8I6eU5Ycc55L1jl2yPipoK701V5NzYwkgF+vbU4Cr5JAa0E+N/FmxF&#10;IVnUh6M4ts6Nw2JbrtMjkYeuEgW56lrbe3npkAfoICnuXsXrB0uinRS7zbvw/GPv&#10;8lgddL0fGtH5rIV6ysjqoLl4d2VH9UFKx5djJ1Pj9VAkXFIiNHNnCcHyNZdrj+LD&#10;vhoOlRKvWOYiqS1ugHgcLMIgXTuE2Xta9iBesExoSK5bABEBAAGJBHIEGAEIACYW&#10;IQSGJHVZadUQUP9KNBN+xEjYdP9G9AUCYs1YtwIbAgUJCWYBgAJACRB+xEjYdP9G&#10;9MF0IAQZAQgAHRYhBB6nUT4p9OmHN/hEypkKUXf3DKRWBQJizVi3AAoJEJkKUXf3&#10;DKRW3VQP/izxWYrOhp251QGiwKlrfjwZXMeQzuZet/D4Zxlch0IV2HTS5elYZpLW&#10;56mk4Qa5mgBPNqeCqZBnS6ztSP+oto6/XBNsiRWUkJpiSLcwF7o7C6v/eeuWR/i8&#10;Q1a/zYKUrvkfg7THd6kzyqT0REYgM70zktgjka0HJHIwRQfyE3gL3SCVFTxy0o8b&#10;5lz7WMFR6m45NpnJqnBGwXSFw0jSwo/mL7OJ9cYxDp1C/3KLevtfw8jfU0ogEY+X&#10;QYEDKOIA6O300/XfNir0uqMriXQfCzOdPHxw/o9msKD1Pl5Zsx91JzEBVri6MClr&#10;SSaeBB7DYShd6z6qC3Yoh4PguzJQJspeBmyxP7OBFHwTusetkaVU3UWobYbl3HBu&#10;EruABM7pqfm17xCdYt2sQHmvQaiOnNm7z8oSesI1h+6rNNx1o+HEkaf6NZ+ynjvr&#10;Bbvb0WmfQR5EzC/YtlvnKRLyI4GsxHvXQWFF7zEvs4hxR0qcRuB041Xmj1X9Puj3&#10;jsX8SVEYGnqrgEC3V06I4peYiD4UuSWUuj8kHqEVv+eMrI+h0L9zUoaFzEtsHQ8Z&#10;ambK10XwH2gxXDRSS6UDBD8ipNO7Rcwoz0Hds17m5MRs0r5s6kDaPnzR4/d7WQhz&#10;iiPNuD7QO8Jp9Ttm3fbmr4Qgo2CwtDcBTHt/DIfEHoTJsHwJkSzdL4gP/A8NJea5&#10;qAutr5NlnR5tBqa/tgmW6liRS8DOooCfCAGhgWXtL88xcgG9keLWkF5p4jZj3u21&#10;r2d/ghddnzmTwrjmz0ODW5LbXbdgna3PTE4QHskQnEJ7fQNHsP9uU4CADlFNBcw4&#10;cMV5G6LYr4YAxoTT2pxysIMJqZvZ9/GALeY7dBiIBnG9uFHWoqgdcux2IBfpZ7UT&#10;JgKUc7BRkJbIwZWiPVM71zFvOQJFvEtLnem74lmW+ipCj+hwQxGgCbF/AyvyvqN0&#10;5aqysDSAmlXwjvek3fuVemnjiZwy0TgYl0tXvLZbwCd2GJUgpWNI/dHaQaV0ZdQM&#10;f40cjymE1N5QCAayuNToMmIP5jUvrZSkaurB2wiMOM+tzf+OYCp/Mq5PY46WSczu&#10;OFdKwia9VYRP8u9QKr8Yz17LhGxC9LrzKtUuJoZ5eiUzVXeU+i6uLzZz1ZzoweZV&#10;5qRG5OBB4NXY32peoWr/kXBU29X3LmHWUw1uqe+N9j/3s0FjtOM8oXR254FtWF9h&#10;NFjhjfKFaMuwIS51jf6qR9Ygqbs7Z9h8tgkTqXg1IGgDtcJKcT1aJvyDOXmjW/+b&#10;UFEkj3BAv41hkawxCpTwAKbAwVQLw9Y0TqTNsWH+8IgdGR+OeEou6j8Grw2TV974&#10;5D0/rIoMUHlOPyk/bz9ZrZp5qlBt7M9l7BBP&#10;=ZVEV&#10;-----END PGP PUBLIC KEY BLOCK-----&#10;"/>
+      </properties>
+    </artifact>
+    <artifact classifier="osgi.bundle" id="org.eclipse.wb.rcp.databinding.emf" version="1.9.1.202210231159">
+      <properties size="9">
+        <property name="artifact.size" value="151687"/>
+        <property name="download.size" value="151687"/>
+        <property name="maven-groupId" value="org.eclipse.wb"/>
+        <property name="maven-artifactId" value="org.eclipse.wb.rcp.databinding.emf"/>
+        <property name="maven-version" value="1.9.1-SNAPSHOT"/>
+        <property name="maven-type" value="eclipse-plugin"/>
+        <property name="download.md5" value="cda667b4f7c8845b818ff1853c2820e2"/>
+        <property name="download.checksum.md5" value="cda667b4f7c8845b818ff1853c2820e2"/>
+        <property name="download.checksum.sha-256" value="0bba127ef731f73b1f86e01ff28f32c462b0294685dd93bb627cbe0d4d10ca2e"/>
+      </properties>
+    </artifact>
+    <artifact classifier="osgi.bundle" id="org.eclipse.wb.os.win32" version="1.9.1.202210231159">
+      <properties size="9">
+        <property name="artifact.size" value="99079"/>
+        <property name="download.size" value="99079"/>
+        <property name="maven-groupId" value="org.eclipse.wb"/>
+        <property name="maven-artifactId" value="org.eclipse.wb.os.win32"/>
+        <property name="maven-version" value="1.9.1-SNAPSHOT"/>
+        <property name="maven-type" value="eclipse-plugin"/>
+        <property name="download.md5" value="af20ea48865e51f48c3a56ba3be86247"/>
+        <property name="download.checksum.md5" value="af20ea48865e51f48c3a56ba3be86247"/>
+        <property name="download.checksum.sha-256" value="b0b6f48e975bc2bc7fc683d7ff6e310a3a423a45b3a99a71b2df4e18d582934e"/>
+      </properties>
+    </artifact>
+    <artifact classifier="org.eclipse.update.feature" id="org.eclipse.wb.core.feature" version="1.11.0.202210231159">
+      <properties size="10">
+        <property name="artifact.size" value="33934"/>
+        <property name="download.size" value="33934"/>
+        <property name="maven-groupId" value="org.eclipse.wb"/>
+        <property name="maven-artifactId" value="org.eclipse.wb.core.feature"/>
+        <property name="maven-version" value="1.11.0-SNAPSHOT"/>
+        <property name="maven-type" value="eclipse-feature"/>
+        <property name="download.contentType" value="application/zip"/>
+        <property name="download.md5" value="8af9d80518706d69c30f04f0b8ac06e3"/>
+        <property name="download.checksum.md5" value="8af9d80518706d69c30f04f0b8ac06e3"/>
+        <property name="download.checksum.sha-256" value="750dd7c5d4f8dec93afe8f81a4d8fc8c20836e2fee04242b89cd4d406a243f43"/>
+      </properties>
+    </artifact>
+    <artifact classifier="osgi.bundle" id="org.apache.commons.digester" version="3.2.0">
+      <properties size="12">
+        <property name="maven-groupId" value="org.apache.commons"/>
+        <property name="maven-artifactId" value="commons-digester3"/>
+        <property name="maven-version" value="3.2"/>
+        <property name="maven-repository" value="eclipse.maven.central.mirror"/>
+        <property name="maven-type" value="jar"/>
+        <property name="download.size" value="241614"/>
+        <property name="artifact.size" value="241614"/>
+        <property name="download.md5" value="41d2c62c7aedafa7a3627794abc83f71"/>
+        <property name="download.checksum.md5" value="41d2c62c7aedafa7a3627794abc83f71"/>
+        <property name="download.checksum.sha-256" value="1c150e3d2df4b4237b47e28fea2079fb0da324578d5cca6a5fed2e37a62082ec"/>
+        <property name="pgp.signatures" value="-----BEGIN PGP SIGNATURE-----&#10;&#10;iQIzBAABCAAdFiEEHqdRPin06Yc3+ETKmQpRd/cMpFYFAmNVLdQACgkQmQpRd/cM&#10;pFb7zA/6A0CWWvEc8ftLskNA/7FIwLJSkaNOZKdpiWwgoipKPeBSn08MV/a2d/b2&#10;6bNq/PnK03PD07kbP5UTMnc2rykYR05Mg83Wo98nVo2n1IkDtxLth+aHRQBZysUv&#10;lVTte8FDuRZiDhZRGxjXAwsbphuSYYaUVeOzFKVKRv3LfSVALg3fAAEVfAdWL3/u&#10;RImhAWW4c6yY6OOvqfI59cuORsBXwk9vtOVeTSjmJxrlYXMwQa88/zNAnFUtcqHb&#10;jyo6tTiwdAdde1mI4woHiwYKyOqMzLKa2SWaxlC+bibgw6hwU235kziecx+Nl17l&#10;CEnqFL6HFpfYzXATjgKm5+D9cScfNrp/IBmPAydIOkJLePpPQ3+kLdPjJZdaIqUi&#10;b+m2sTLNkdaMqjxXjZIJ6ztCvRYzQLNYxduyoSKoFmbxo5KZvNRtkCvQtv4ILWOq&#10;25JElhSj5SznFHA/zDr9Hf7+cUR0eBLUVEk+OjT6/DRa/IMf3HJlV4WOZJhxc/wg&#10;1M6bEq8mzFXK05IN9KYN2juunSu2P00e9yS8DHogvGh7EgMQj+yy4SxN44GnubSN&#10;5OhGi7B3YN4H5V2nHGmP6gbfSd5qIXPps09CxtxkylmokdbWpiDOvRciF7G3SjqT&#10;T9p33nmeio0xKw9wTDI5PysIP0H1BcO+52Z2V3FtyurEhzGxAWw=&#10;=KJmt&#10;-----END PGP SIGNATURE-----&#10;"/>
+        <property name="pgp.publicKeys" value="-----BEGIN PGP PUBLIC KEY BLOCK-----&#10;&#10;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&#10;5D0/rIoMUHlOPyk/bz9ZrZp5qlBt7M9l7BBP&#10;=ZVEV&#10;-----END PGP PUBLIC KEY BLOCK-----&#10;"/>
+      </properties>
+    </artifact>
+    <artifact classifier="osgi.bundle" id="org.eclipse.wb.rcp.doc.user" version="1.9.1.202210231159">
+      <properties size="9">
+        <property name="artifact.size" value="10091912"/>
+        <property name="download.size" value="10091912"/>
+        <property name="maven-groupId" value="org.eclipse.wb"/>
+        <property name="maven-artifactId" value="org.eclipse.wb.rcp.doc.user"/>
+        <property name="maven-version" value="1.9.1-SNAPSHOT"/>
+        <property name="maven-type" value="eclipse-plugin"/>
+        <property name="download.md5" value="d0e4a3925b7f21f464d352a9974af0d3"/>
+        <property name="download.checksum.md5" value="d0e4a3925b7f21f464d352a9974af0d3"/>
+        <property name="download.checksum.sha-256" value="ce91038775ae9a14ca8cf2b9570be58347f0a6341b6c8a1b3aea440abec7cd6c"/>
+      </properties>
+    </artifact>
+    <artifact classifier="org.eclipse.update.feature" id="org.eclipse.wb.layout.group.feature" version="1.11.0.202210231159">
+      <properties size="10">
+        <property name="artifact.size" value="33792"/>
+        <property name="download.size" value="33792"/>
+        <property name="maven-groupId" value="org.eclipse.wb"/>
+        <property name="maven-artifactId" value="org.eclipse.wb.layout.group.feature"/>
+        <property name="maven-version" value="1.11.0-SNAPSHOT"/>
+        <property name="maven-type" value="eclipse-feature"/>
+        <property name="download.contentType" value="application/zip"/>
+        <property name="download.md5" value="e994fd55fa1f208c00594f301a456f9b"/>
+        <property name="download.checksum.md5" value="e994fd55fa1f208c00594f301a456f9b"/>
+        <property name="download.checksum.sha-256" value="7c103a44277ae4a024dcc8b88fd3d7bdf05c61bda28e0768f1c2283b98e6b7eb"/>
+      </properties>
+    </artifact>
+    <artifact classifier="osgi.bundle" id="org.eclipse.wb.swing.FormLayout" version="1.9.1.202210231159">
+      <properties size="9">
+        <property name="artifact.size" value="318571"/>
+        <property name="download.size" value="318571"/>
+        <property name="maven-groupId" value="org.eclipse.wb"/>
+        <property name="maven-artifactId" value="org.eclipse.wb.swing.FormLayout"/>
+        <property name="maven-version" value="1.9.1-SNAPSHOT"/>
+        <property name="maven-type" value="eclipse-plugin"/>
+        <property name="download.md5" value="f4384e62bd49d084d12c5aaec2767c5d"/>
+        <property name="download.checksum.md5" value="f4384e62bd49d084d12c5aaec2767c5d"/>
+        <property name="download.checksum.sha-256" value="ca463e7ec78759392afb745822ab08fdb925e6e5a5753c8c6457c969975854a0"/>
+      </properties>
+    </artifact>
+    <artifact classifier="osgi.bundle" id="org.eclipse.wb.runtime.lib" version="1.9.1.202210231159">
+      <properties size="9">
+        <property name="artifact.size" value="490281"/>
+        <property name="download.size" value="490281"/>
+        <property name="maven-groupId" value="org.eclipse.wb"/>
+        <property name="maven-artifactId" value="org.eclipse.wb.runtime.lib"/>
+        <property name="maven-version" value="1.9.1-SNAPSHOT"/>
+        <property name="maven-type" value="eclipse-plugin"/>
+        <property name="download.md5" value="bc5e3b4b95b80790d38acc3012f73518"/>
+        <property name="download.checksum.md5" value="bc5e3b4b95b80790d38acc3012f73518"/>
+        <property name="download.checksum.sha-256" value="f0593369586fcea1bc213d3200a8ddc8589ab04d26f92c40c2e9af706dd8564c"/>
+      </properties>
+    </artifact>
+    <artifact classifier="osgi.bundle" id="org.apache.commons.logging" version="1.2.0.v20180409-1502">
+      <properties size="8">
+        <property name="artifact.size" value="73163"/>
+        <property name="download.size" value="73163"/>
+        <property name="maven-groupId" value="org.eclipse.orbit.bundles"/>
+        <property name="maven-artifactId" value="org.apache.commons.logging"/>
+        <property name="maven-version" value="1.2.0-SNAPSHOT"/>
+        <property name="download.md5" value="d9257298a954cfda415b45a8e82fe717"/>
+        <property name="download.checksum.md5" value="d9257298a954cfda415b45a8e82fe717"/>
+        <property name="download.checksum.sha-256" value="62efdae1766f89278400ac26132af0f750cc8200c220ed602d527c564677faa2"/>
+      </properties>
+    </artifact>
+    <artifact classifier="osgi.bundle" id="org.eclipse.wb.layout.group" version="1.9.1.202210231159">
+      <properties size="9">
+        <property name="artifact.size" value="474818"/>
+        <property name="download.size" value="474818"/>
+        <property name="maven-groupId" value="org.eclipse.wb"/>
+        <property name="maven-artifactId" value="org.eclipse.wb.layout.group"/>
+        <property name="maven-version" value="1.9.1-SNAPSHOT"/>
+        <property name="maven-type" value="eclipse-plugin"/>
+        <property name="download.md5" value="56c8d5ccdd7ba1049c8925cc03f2c366"/>
+        <property name="download.checksum.md5" value="56c8d5ccdd7ba1049c8925cc03f2c366"/>
+        <property name="download.checksum.sha-256" value="95c58d9ec024c029ff134fc06a80105451bbd7e986789e18ae768b3d236631a8"/>
+      </properties>
+    </artifact>
+    <artifact classifier="osgi.bundle" id="org.eclipse.wb.swing.doc.user" version="1.9.1.202210231159">
+      <properties size="9">
+        <property name="artifact.size" value="8368755"/>
+        <property name="download.size" value="8368755"/>
+        <property name="maven-groupId" value="org.eclipse.wb"/>
+        <property name="maven-artifactId" value="org.eclipse.wb.swing.doc.user"/>
+        <property name="maven-version" value="1.9.1-SNAPSHOT"/>
+        <property name="maven-type" value="eclipse-plugin"/>
+        <property name="download.md5" value="31145ebe566096dac8017774f4260537"/>
+        <property name="download.checksum.md5" value="31145ebe566096dac8017774f4260537"/>
+        <property name="download.checksum.sha-256" value="71285ceeb20d8b1b9f51a481272dda7eb09f7db740b35cfe5cfa41c6b1698025"/>
+      </properties>
+    </artifact>
+    <artifact classifier="osgi.bundle" id="org.eclipse.wb.swt" version="1.9.1.202210231159">
+      <properties size="9">
+        <property name="artifact.size" value="952503"/>
+        <property name="download.size" value="952503"/>
+        <property name="maven-groupId" value="org.eclipse.wb"/>
+        <property name="maven-artifactId" value="org.eclipse.wb.swt"/>
+        <property name="maven-version" value="1.9.1-SNAPSHOT"/>
+        <property name="maven-type" value="eclipse-plugin"/>
+        <property name="download.md5" value="61d8cc3f49a6b543fcacb2107504b0a6"/>
+        <property name="download.checksum.md5" value="61d8cc3f49a6b543fcacb2107504b0a6"/>
+        <property name="download.checksum.sha-256" value="d67bc45bda0515d08a447e2d523819a4f5c3603639bd3fde217c1676acfb8146"/>
+      </properties>
+    </artifact>
+    <artifact classifier="osgi.bundle" id="org.eclipse.wb.core.xml" version="1.9.1.202210231159">
+      <properties size="9">
+        <property name="artifact.size" value="522981"/>
+        <property name="download.size" value="522981"/>
+        <property name="maven-groupId" value="org.eclipse.wb"/>
+        <property name="maven-artifactId" value="org.eclipse.wb.core.xml"/>
+        <property name="maven-version" value="1.9.1-SNAPSHOT"/>
+        <property name="maven-type" value="eclipse-plugin"/>
+        <property name="download.md5" value="e41725591daa363880c75ac0283a6d27"/>
+        <property name="download.checksum.md5" value="e41725591daa363880c75ac0283a6d27"/>
+        <property name="download.checksum.sha-256" value="f90651a99ad157c29ce940ff955b699c2bdc8715a025e55e0d63e17562e7a7d7"/>
+      </properties>
+    </artifact>
+    <artifact classifier="osgi.bundle" id="org.eclipse.wb.swing.databinding" version="1.9.1.202210231159">
+      <properties size="9">
+        <property name="artifact.size" value="333216"/>
+        <property name="download.size" value="333216"/>
+        <property name="maven-groupId" value="org.eclipse.wb"/>
+        <property name="maven-artifactId" value="org.eclipse.wb.swing.databinding"/>
+        <property name="maven-version" value="1.9.1-SNAPSHOT"/>
+        <property name="maven-type" value="eclipse-plugin"/>
+        <property name="download.md5" value="9e4ac9d1c9d5f2b75b54db6649e7e24e"/>
+        <property name="download.checksum.md5" value="9e4ac9d1c9d5f2b75b54db6649e7e24e"/>
+        <property name="download.checksum.sha-256" value="51d0422264f120fd8a458acc613ff5fc1f9f67ce3b5dc28e5e8a67f773328fb3"/>
+      </properties>
+    </artifact>
+    <artifact classifier="osgi.bundle" id="org.eclipse.wb.swing.MigLayout" version="1.9.1.202210231159">
+      <properties size="9">
+        <property name="artifact.size" value="305512"/>
+        <property name="download.size" value="305512"/>
+        <property name="maven-groupId" value="org.eclipse.wb"/>
+        <property name="maven-artifactId" value="org.eclipse.wb.swing.MigLayout"/>
+        <property name="maven-version" value="1.9.1-SNAPSHOT"/>
+        <property name="maven-type" value="eclipse-plugin"/>
+        <property name="download.md5" value="f398ce502cb5e739b772595873a21745"/>
+        <property name="download.checksum.md5" value="f398ce502cb5e739b772595873a21745"/>
+        <property name="download.checksum.sha-256" value="350fa268bf30bc7f0c461e6bfdb529987098f707a8a1fa145dcdfd752bc5da90"/>
+      </properties>
+    </artifact>
+    <artifact classifier="org.eclipse.update.feature" id="org.eclipse.wb.rcp.doc.user.feature" version="1.11.0.202210231159">
+      <properties size="10">
+        <property name="artifact.size" value="33776"/>
+        <property name="download.size" value="33776"/>
+        <property name="maven-groupId" value="org.eclipse.wb"/>
+        <property name="maven-artifactId" value="org.eclipse.wb.rcp.doc.user.feature"/>
+        <property name="maven-version" value="1.11.0-SNAPSHOT"/>
+        <property name="maven-type" value="eclipse-feature"/>
+        <property name="download.contentType" value="application/zip"/>
+        <property name="download.md5" value="febe8aaedac47db4af4c369b9f874ef8"/>
+        <property name="download.checksum.md5" value="febe8aaedac47db4af4c369b9f874ef8"/>
+        <property name="download.checksum.sha-256" value="2cc3357633db73adc4120d2a31dd1dff1ccec682346ecddbfc5d29379fd96439"/>
+      </properties>
+    </artifact>
+    <artifact classifier="osgi.bundle" id="org.eclipse.wb.rcp.swing2swt" version="1.9.1.202210231159">
+      <properties size="9">
+        <property name="artifact.size" value="71019"/>
+        <property name="download.size" value="71019"/>
+        <property name="maven-groupId" value="org.eclipse.wb"/>
+        <property name="maven-artifactId" value="org.eclipse.wb.rcp.swing2swt"/>
+        <property name="maven-version" value="1.9.1-SNAPSHOT"/>
+        <property name="maven-type" value="eclipse-plugin"/>
+        <property name="download.md5" value="c02ff1df10e3374e9fdee02169cda312"/>
+        <property name="download.checksum.md5" value="c02ff1df10e3374e9fdee02169cda312"/>
+        <property name="download.checksum.sha-256" value="dd96146175c270718abdbbd2b4aa80fdf523f40815b20ef9a1fa859faf40b8fe"/>
+      </properties>
+    </artifact>
+    <artifact classifier="osgi.bundle" id="org.eclipse.wb.core.databinding.xml" version="1.9.1.202210231159">
+      <properties size="9">
+        <property name="artifact.size" value="34014"/>
+        <property name="download.size" value="34014"/>
+        <property name="maven-groupId" value="org.eclipse.wb"/>
+        <property name="maven-artifactId" value="org.eclipse.wb.core.databinding.xml"/>
+        <property name="maven-version" value="1.9.1-SNAPSHOT"/>
+        <property name="maven-type" value="eclipse-plugin"/>
+        <property name="download.md5" value="9163b8568bc6da6ac7a9e6745575d9d5"/>
+        <property name="download.checksum.md5" value="9163b8568bc6da6ac7a9e6745575d9d5"/>
+        <property name="download.checksum.sha-256" value="4ed348497e0af43048b60c1657b835920bcd380904b40fa857dd21c72761eab2"/>
+      </properties>
+    </artifact>
+    <artifact classifier="org.eclipse.update.feature" id="org.eclipse.wb.core.java.feature" version="1.11.0.202210231159">
+      <properties size="10">
+        <property name="artifact.size" value="33836"/>
+        <property name="download.size" value="33836"/>
+        <property name="maven-groupId" value="org.eclipse.wb"/>
+        <property name="maven-artifactId" value="org.eclipse.wb.core.java.feature"/>
+        <property name="maven-version" value="1.11.0-SNAPSHOT"/>
+        <property name="maven-type" value="eclipse-feature"/>
+        <property name="download.contentType" value="application/zip"/>
+        <property name="download.md5" value="7c98db946d19e712291c4619c883100e"/>
+        <property name="download.checksum.md5" value="7c98db946d19e712291c4619c883100e"/>
+        <property name="download.checksum.sha-256" value="76f8d1e1d3c91b70273e0fbdfe313db0293714605aaf62d16987a754e6ac9406"/>
+      </properties>
+    </artifact>
+    <artifact classifier="org.eclipse.update.feature" id="org.eclipse.wb.swt.feature" version="1.11.0.202210231159">
+      <properties size="10">
+        <property name="artifact.size" value="33786"/>
+        <property name="download.size" value="33786"/>
+        <property name="maven-groupId" value="org.eclipse.wb"/>
+        <property name="maven-artifactId" value="org.eclipse.wb.swt.feature"/>
+        <property name="maven-version" value="1.11.0-SNAPSHOT"/>
+        <property name="maven-type" value="eclipse-feature"/>
+        <property name="download.contentType" value="application/zip"/>
+        <property name="download.md5" value="042ce89973590deb342888acc0e47cb5"/>
+        <property name="download.checksum.md5" value="042ce89973590deb342888acc0e47cb5"/>
+        <property name="download.checksum.sha-256" value="a1ba108a2b8415bffdb85a75bd84f9c59602e3b65639d279111c95f7dab67ec4"/>
+      </properties>
+    </artifact>
+    <artifact classifier="osgi.bundle" id="org.eclipse.wb.rcp.databinding.xwt" version="1.9.1.202210231159">
+      <properties size="9">
+        <property name="artifact.size" value="112930"/>
+        <property name="download.size" value="112930"/>
+        <property name="maven-groupId" value="org.eclipse.wb"/>
+        <property name="maven-artifactId" value="org.eclipse.wb.rcp.databinding.xwt"/>
+        <property name="maven-version" value="1.9.1-SNAPSHOT"/>
+        <property name="maven-type" value="eclipse-plugin"/>
+        <property name="download.md5" value="31cc45a044ecd9470ee9702498990fc6"/>
+        <property name="download.checksum.md5" value="31cc45a044ecd9470ee9702498990fc6"/>
+        <property name="download.checksum.sha-256" value="6ffa4725f43cef4b9128d029cea8bec861ce8dc6ecf6812f481180a161230be1"/>
+      </properties>
+    </artifact>
+    <artifact classifier="osgi.bundle" id="org.eclipse.wb.core.lib" version="1.9.1.202210231159">
+      <properties size="9">
+        <property name="artifact.size" value="3583683"/>
+        <property name="download.size" value="3583683"/>
+        <property name="maven-groupId" value="org.eclipse.wb"/>
+        <property name="maven-artifactId" value="org.eclipse.wb.core.lib"/>
+        <property name="maven-version" value="1.9.1-SNAPSHOT"/>
+        <property name="maven-type" value="eclipse-plugin"/>
+        <property name="download.md5" value="31c13d5b4cf9fc7958c3e87f6e9e46cf"/>
+        <property name="download.checksum.md5" value="31c13d5b4cf9fc7958c3e87f6e9e46cf"/>
+        <property name="download.checksum.sha-256" value="1fb925d705d309b9aaba333b722c38c51dd5f881c02e6d85921fd3ee6d7232d3"/>
+      </properties>
+    </artifact>
+    <artifact classifier="osgi.bundle" id="org.eclipse.wb.rcp.nebula" version="1.9.1.202210231159">
+      <properties size="9">
+        <property name="artifact.size" value="153403"/>
+        <property name="download.size" value="153403"/>
+        <property name="maven-groupId" value="org.eclipse.wb"/>
+        <property name="maven-artifactId" value="org.eclipse.wb.rcp.nebula"/>
+        <property name="maven-version" value="1.9.1-SNAPSHOT"/>
+        <property name="maven-type" value="eclipse-plugin"/>
+        <property name="download.md5" value="bcda7d47527f0c6775cc55cfbdf79d00"/>
+        <property name="download.checksum.md5" value="bcda7d47527f0c6775cc55cfbdf79d00"/>
+        <property name="download.checksum.sha-256" value="b289c9fb6a7e9366e164e8a387cb4dabbf25ac8cb074cc79d9d39d8bd8327880"/>
+      </properties>
+    </artifact>
+    <artifact classifier="osgi.bundle" id="org.eclipse.wb.rcp.SWT_AWT" version="1.9.1.202210231159">
+      <properties size="9">
+        <property name="artifact.size" value="27359"/>
+        <property name="download.size" value="27359"/>
+        <property name="maven-groupId" value="org.eclipse.wb"/>
+        <property name="maven-artifactId" value="org.eclipse.wb.rcp.SWT_AWT"/>
+        <property name="maven-version" value="1.9.1-SNAPSHOT"/>
+        <property name="maven-type" value="eclipse-plugin"/>
+        <property name="download.md5" value="82dbb27f1a571d45fabee9c752ee6bc8"/>
+        <property name="download.checksum.md5" value="82dbb27f1a571d45fabee9c752ee6bc8"/>
+        <property name="download.checksum.sha-256" value="e98a04241d5107730c85ae782aea8c08a7210925558aba478f33f2c11ab1919d"/>
+      </properties>
+    </artifact>
+    <artifact classifier="osgi.bundle" id="org.eclipse.wb.rcp" version="1.9.1.202210231159">
+      <properties size="9">
+        <property name="artifact.size" value="1553150"/>
+        <property name="download.size" value="1553150"/>
+        <property name="maven-groupId" value="org.eclipse.wb"/>
+        <property name="maven-artifactId" value="org.eclipse.wb.rcp"/>
+        <property name="maven-version" value="1.9.1-SNAPSHOT"/>
+        <property name="maven-type" value="eclipse-plugin"/>
+        <property name="download.md5" value="5f09d4d236bcc30f80fcc6e0bb6da3d1"/>
+        <property name="download.checksum.md5" value="5f09d4d236bcc30f80fcc6e0bb6da3d1"/>
+        <property name="download.checksum.sha-256" value="f2ac50fc8fa0db96864dbb81c8dc48facc3adce88200e91b2cb58509bf4e3d98"/>
+      </properties>
+    </artifact>
+    <artifact classifier="osgi.bundle" id="org.eclipse.wb.runtime" version="1.9.1.202210231159">
+      <properties size="9">
+        <property name="artifact.size" value="11488"/>
+        <property name="download.size" value="11488"/>
+        <property name="maven-groupId" value="org.eclipse.wb"/>
+        <property name="maven-artifactId" value="org.eclipse.wb.runtime"/>
+        <property name="maven-version" value="1.9.1-SNAPSHOT"/>
+        <property name="maven-type" value="eclipse-plugin"/>
+        <property name="download.md5" value="fe6e5c09d5aab612a0d50a4f320c353a"/>
+        <property name="download.checksum.md5" value="fe6e5c09d5aab612a0d50a4f320c353a"/>
+        <property name="download.checksum.sha-256" value="e07255c7889009cbc46eef444c34eb616bafe1c051fe69e79d3bc6fb0d8b80b3"/>
+      </properties>
+    </artifact>
+    <artifact classifier="osgi.bundle" id="org.eclipse.wb.core" version="1.11.0.202210231159">
+      <properties size="9">
+        <property name="artifact.size" value="2108089"/>
+        <property name="download.size" value="2108089"/>
+        <property name="maven-groupId" value="org.eclipse.wb"/>
+        <property name="maven-artifactId" value="org.eclipse.wb.core"/>
+        <property name="maven-version" value="1.11.0-SNAPSHOT"/>
+        <property name="maven-type" value="eclipse-plugin"/>
+        <property name="download.md5" value="e094ebe41aa02c236adbfef7ad012629"/>
+        <property name="download.checksum.md5" value="e094ebe41aa02c236adbfef7ad012629"/>
+        <property name="download.checksum.sha-256" value="bf229ec534a2f009621db8a53cb4c0f2d121bdce2b02ef9e037fa22e0e3de9c4"/>
+      </properties>
+    </artifact>
+    <artifact classifier="osgi.bundle" id="org.eclipse.wb.os" version="1.9.1.202210231159">
+      <properties size="9">
+        <property name="artifact.size" value="17454"/>
+        <property name="download.size" value="17454"/>
+        <property name="maven-groupId" value="org.eclipse.wb"/>
+        <property name="maven-artifactId" value="org.eclipse.wb.os"/>
+        <property name="maven-version" value="1.9.1-SNAPSHOT"/>
+        <property name="maven-type" value="eclipse-plugin"/>
+        <property name="download.md5" value="3c396e84d6d23cf805c441dc742cf832"/>
+        <property name="download.checksum.md5" value="3c396e84d6d23cf805c441dc742cf832"/>
+        <property name="download.checksum.sha-256" value="7bc099c5d05f22da1e6d452c43d2c861ecb4c38201f28e91f52233413c506344"/>
+      </properties>
+    </artifact>
+    <artifact classifier="org.eclipse.update.feature" id="org.eclipse.wb.doc.user.feature" version="1.11.0.202210231159">
+      <properties size="10">
+        <property name="artifact.size" value="33777"/>
+        <property name="download.size" value="33777"/>
+        <property name="maven-groupId" value="org.eclipse.wb"/>
+        <property name="maven-artifactId" value="org.eclipse.wb.doc.user.feature"/>
+        <property name="maven-version" value="1.11.0-SNAPSHOT"/>
+        <property name="maven-type" value="eclipse-feature"/>
+        <property name="download.contentType" value="application/zip"/>
+        <property name="download.md5" value="3763f97709ce639077117b4c81d3916f"/>
+        <property name="download.checksum.md5" value="3763f97709ce639077117b4c81d3916f"/>
+        <property name="download.checksum.sha-256" value="698ee2c08373d9b78ca0741dda3ca63f4be657cbdc151972e6a656a1e414457d"/>
+      </properties>
+    </artifact>
+    <artifact classifier="org.eclipse.update.feature" id="org.eclipse.wb.rcp.SWT_AWT_support" version="1.11.0.202210231159">
+      <properties size="10">
+        <property name="artifact.size" value="33796"/>
+        <property name="download.size" value="33796"/>
+        <property name="maven-groupId" value="org.eclipse.wb"/>
+        <property name="maven-artifactId" value="org.eclipse.wb.rcp.SWT_AWT_support"/>
+        <property name="maven-version" value="1.11.0-SNAPSHOT"/>
+        <property name="maven-type" value="eclipse-feature"/>
+        <property name="download.contentType" value="application/zip"/>
+        <property name="download.md5" value="5513e82bcf0ca4629b1964ea0a20a6df"/>
+        <property name="download.checksum.md5" value="5513e82bcf0ca4629b1964ea0a20a6df"/>
+        <property name="download.checksum.sha-256" value="1f865c5cb50b9123166a72051e0156f2dec41bf6748baf20c4d4de667b53ee02"/>
+      </properties>
+    </artifact>
+    <artifact classifier="org.eclipse.update.feature" id="org.eclipse.wb.swing.feature" version="1.11.0.202210231159">
+      <properties size="10">
+        <property name="artifact.size" value="33911"/>
+        <property name="download.size" value="33911"/>
+        <property name="maven-groupId" value="org.eclipse.wb"/>
+        <property name="maven-artifactId" value="org.eclipse.wb.swing.feature"/>
+        <property name="maven-version" value="1.11.0-SNAPSHOT"/>
+        <property name="maven-type" value="eclipse-feature"/>
+        <property name="download.contentType" value="application/zip"/>
+        <property name="download.md5" value="130f9f36138e69238f96606f9fb570ac"/>
+        <property name="download.checksum.md5" value="130f9f36138e69238f96606f9fb570ac"/>
+        <property name="download.checksum.sha-256" value="a37499c6a6c424897151a3ea4b0d9ca27ac115f82287aefe94bf22c2588b3ee5"/>
+      </properties>
+    </artifact>
+    <artifact classifier="osgi.bundle" id="com.google.guava" version="31.1.0.jre">
+      <properties size="12">
+        <property name="maven-groupId" value="com.google.guava"/>
+        <property name="maven-artifactId" value="guava"/>
+        <property name="maven-version" value="31.1-jre"/>
+        <property name="maven-repository" value="eclipse.maven.central.mirror"/>
+        <property name="maven-type" value="jar"/>
+        <property name="download.size" value="2959479"/>
+        <property name="artifact.size" value="2959479"/>
+        <property name="download.md5" value="e37782d974104aa3b0a7bee9927c8042"/>
+        <property name="download.checksum.md5" value="e37782d974104aa3b0a7bee9927c8042"/>
+        <property name="download.checksum.sha-256" value="a42edc9cab792e39fe39bb94f3fca655ed157ff87a8af78e1d6ba5b07c4a00ab"/>
+        <property name="pgp.signatures" value="-----BEGIN PGP SIGNATURE-----&#10;&#10;iQIzBAABCAAdFiEEHqdRPin06Yc3+ETKmQpRd/cMpFYFAmNVLdUACgkQmQpRd/cM&#10;pFZBhg/9Huz4J/pQ3pVeJA/OihjWGZv0Tv6opN4glDnZhFQ/PSl7ApwO+hVMeJ4o&#10;A9cI0mG4vco+7HE935xbwG3sx9NM47VYiM6mOYHcoPUJWYL/FYRo3RqoWxqTGneZ&#10;fHsNBuTTcchF86IrNy8SMsHWOEJDjZOyf8jn/gpedHYK9kKlQL2m1ceHTXuKhE83&#10;9V1BFVrRDfsBpLXH2JRfeK+k1GpDrHp8aa8GK2asfJT3lGIqnGDQVoOjSgYu1gAZ&#10;G6i21lb10IZgpmk9qPp/QvR2HFWj7WADalRtMpU+MOBsnY8nnU7HGsyRxS16+QOM&#10;ghOb0zEvo29gL+zu+1F25fKBLzMNjvheHUYd+lwbY04rV6DebMzmC3FgQySPG/Q3&#10;ZkCTZyjhBIrPc5z65cHdRCh4RWtKJ8rAghsaFVPpfbnOt+RBLzDX7xxnVejSuUxT&#10;Bm3MyFENarafVbSRNI5FSL3tqJweG7oJYj03Mf/I5XKKWCwfN0+P9LXW5j0DQanw&#10;kO+kcAx9Db64cLqTZdW25L+0nQ/N3pndDUjoF2/vmHHmYh2hd3dNPWgdaCPcMUMg&#10;+CeBESYrTlwh98sJYcBOUHOG3kYZlIryYCcrEttu7c/0bkobN7lUl5hT8+hTu3AI&#10;wYnlhYEcU/6R1lyPja2i6CqVheIAPAAOsoEMAloHGNT5KIVuWbU=&#10;=f8+3&#10;-----END PGP SIGNATURE-----&#10;"/>
+        <property name="pgp.publicKeys" value="-----BEGIN PGP PUBLIC KEY BLOCK-----&#10;&#10;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&#10;5D0/rIoMUHlOPyk/bz9ZrZp5qlBt7M9l7BBP&#10;=ZVEV&#10;-----END PGP PUBLIC KEY BLOCK-----&#10;"/>
+      </properties>
+    </artifact>
+    <artifact classifier="osgi.bundle" id="org.eclipse.wb.xwt" version="1.9.1.202210231159">
+      <properties size="9">
+        <property name="artifact.size" value="1433158"/>
+        <property name="download.size" value="1433158"/>
+        <property name="maven-groupId" value="org.eclipse.wb"/>
+        <property name="maven-artifactId" value="org.eclipse.wb.xwt"/>
+        <property name="maven-version" value="1.9.1-SNAPSHOT"/>
+        <property name="maven-type" value="eclipse-plugin"/>
+        <property name="download.md5" value="215a1fb49b3055ebf988eb6efdaabb18"/>
+        <property name="download.checksum.md5" value="215a1fb49b3055ebf988eb6efdaabb18"/>
+        <property name="download.checksum.sha-256" value="8797f41c4de6e76b76cb3b1310f09d3371f10c730c4e39c4bde65e9dadfdda20"/>
+      </properties>
+    </artifact>
+    <artifact classifier="osgi.bundle" id="org.eclipse.wb.swing.MigLayout.lib" version="1.9.1.202210231159">
+      <properties size="9">
+        <property name="artifact.size" value="291369"/>
+        <property name="download.size" value="291369"/>
+        <property name="maven-groupId" value="org.eclipse.wb"/>
+        <property name="maven-artifactId" value="org.eclipse.wb.swing.MigLayout.lib"/>
+        <property name="maven-version" value="1.9.1-SNAPSHOT"/>
+        <property name="maven-type" value="eclipse-plugin"/>
+        <property name="download.md5" value="ef1c4e3e83224816fdcb05218c1e1b74"/>
+        <property name="download.checksum.md5" value="ef1c4e3e83224816fdcb05218c1e1b74"/>
+        <property name="download.checksum.sha-256" value="4aca5459dfb26049e1c893348e6d8530e466164492d80732e09d0dfcbceacc50"/>
+      </properties>
+    </artifact>
+    <artifact classifier="osgi.bundle" id="com.google.guava.failureaccess" version="1.0.1">
+      <properties size="12">
+        <property name="maven-groupId" value="com.google.guava"/>
+        <property name="maven-artifactId" value="failureaccess"/>
+        <property name="maven-version" value="1.0.1"/>
+        <property name="maven-repository" value="eclipse.maven.central.mirror"/>
+        <property name="maven-type" value="jar"/>
+        <property name="download.size" value="4617"/>
+        <property name="artifact.size" value="4617"/>
+        <property name="download.md5" value="091883993ef5bfa91da01dcc8fc52236"/>
+        <property name="download.checksum.md5" value="091883993ef5bfa91da01dcc8fc52236"/>
+        <property name="download.checksum.sha-256" value="a171ee4c734dd2da837e4b16be9df4661afab72a41adaf31eb84dfdaf936ca26"/>
+        <property name="pgp.signatures" value="-----BEGIN PGP SIGNATURE-----&#10;&#10;iQIzBAABCAAdFiEEHqdRPin06Yc3+ETKmQpRd/cMpFYFAmNVLdUACgkQmQpRd/cM&#10;pFZ1pg/8CBu9x5yO7XTxzbt73/dusYfYILx0HaRV7hvEpnrIijZUyyUxD8lwQQ/L&#10;l4dVo9D/AX0AaZSd+OcQvakcHvNxEkhh3kowdiU3YeAIc1Kp5N3XsrZpJaFpg2Ct&#10;mqXco3/ItTadbzfOL5k8OOE9/7VtMBB57m7PIzxr2gKRCuiSRui5Q1i2ZOku6iNM&#10;NLWZwoex+cexNckqUJkj9+SI25arLNS3ea4Pll+xjiVUL+MIk9Y1KUJ9/FPIdN9v&#10;7ulfS8cQgtcC4mZKIl5x2LFWqfWrSkKYDhERkxu9keqOQrrSpbPyB7/8OFcDuH3t&#10;vpIHfRhrw2yt1vZd6reXCqYWG5O6yQoCXrVKukVyIMG6m888IkF/tu2D3NlGkz1T&#10;g4pd8axa/PLcwHI80xYJE/nJWhZ7y9WOWIF9yu5VLpkmadWxpw/nOAKln8wvyCGK&#10;5SoxD06ZdRR5Whr7x0ikb8T80GJtnVy2k4kmJN1kHfR3zHaitYCrIxKCiCIx68xM&#10;ZFsnm0OFwgMcK/ZbMD6vWTlGO7DgPEmrF1ilGEqyQV2YL44Z6aeq/W+8Zz3J8AIU&#10;gyPbwtWnCwGDcF6kSW4McPyZNom9bc1XWcN2a+5g9mocPQEh+aXVIL9bQupBeZE8&#10;1GwsfWJ6GBhmCzzUQ7v+TKeuubMFUWSkH1/HvmQbtvgMEueKvec=&#10;=csMI&#10;-----END PGP SIGNATURE-----&#10;"/>
+        <property name="pgp.publicKeys" value="-----BEGIN PGP PUBLIC KEY BLOCK-----&#10;&#10;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&#10;5D0/rIoMUHlOPyk/bz9ZrZp5qlBt7M9l7BBP&#10;=ZVEV&#10;-----END PGP PUBLIC KEY BLOCK-----&#10;"/>
+      </properties>
+    </artifact>
+    <artifact classifier="osgi.bundle" id="org.eclipse.wb.swt.widgets.baseline" version="1.9.1.202210231159">
+      <properties size="9">
+        <property name="artifact.size" value="53646"/>
+        <property name="download.size" value="53646"/>
+        <property name="maven-groupId" value="org.eclipse.wb"/>
+        <property name="maven-artifactId" value="org.eclipse.wb.swt.widgets.baseline"/>
+        <property name="maven-version" value="1.9.1-SNAPSHOT"/>
+        <property name="maven-type" value="eclipse-plugin"/>
+        <property name="download.md5" value="d8ec91f1d486f5f7c70a222cfbf23c50"/>
+        <property name="download.checksum.md5" value="d8ec91f1d486f5f7c70a222cfbf23c50"/>
+        <property name="download.checksum.sha-256" value="b3c16800a4f05a9130fe8aa1a6662bf776992458ad9d4e913da726af0669480b"/>
+      </properties>
+    </artifact>
+    <artifact classifier="osgi.bundle" id="org.eclipse.wb.rcp.databinding" version="1.9.1.202210231159">
+      <properties size="9">
+        <property name="artifact.size" value="641724"/>
+        <property name="download.size" value="641724"/>
+        <property name="maven-groupId" value="org.eclipse.wb"/>
+        <property name="maven-artifactId" value="org.eclipse.wb.rcp.databinding"/>
+        <property name="maven-version" value="1.9.1-SNAPSHOT"/>
+        <property name="maven-type" value="eclipse-plugin"/>
+        <property name="download.md5" value="528833042005333f28780ab45d2f8094"/>
+        <property name="download.checksum.md5" value="528833042005333f28780ab45d2f8094"/>
+        <property name="download.checksum.sha-256" value="4e585230c1b0a6feb5cf4dcd02b937901ce543abd2114f218a9d5ae3947a2d55"/>
+      </properties>
+    </artifact>
+    <artifact classifier="osgi.bundle" id="org.eclipse.wb.os.linux" version="1.9.2.202210231159">
+      <properties size="9">
+        <property name="artifact.size" value="72998"/>
+        <property name="download.size" value="72998"/>
+        <property name="maven-groupId" value="org.eclipse.wb"/>
+        <property name="maven-artifactId" value="org.eclipse.wb.os.linux"/>
+        <property name="maven-version" value="1.9.2-SNAPSHOT"/>
+        <property name="maven-type" value="eclipse-plugin"/>
+        <property name="download.md5" value="c9215ab4f08c3217b4b05169e5cc6c2d"/>
+        <property name="download.checksum.md5" value="c9215ab4f08c3217b4b05169e5cc6c2d"/>
+        <property name="download.checksum.sha-256" value="bb406fdb3e77b8b563e21bd06a7ed77a302a6544bbf0445d20044f1f2c53c916"/>
+      </properties>
+    </artifact>
+    <artifact classifier="osgi.bundle" id="org.eclipse.wb.doc.user" version="1.9.1.202210231159">
+      <properties size="9">
+        <property name="artifact.size" value="4460161"/>
+        <property name="download.size" value="4460161"/>
+        <property name="maven-groupId" value="org.eclipse.wb"/>
+        <property name="maven-artifactId" value="org.eclipse.wb.doc.user"/>
+        <property name="maven-version" value="1.9.1-SNAPSHOT"/>
+        <property name="maven-type" value="eclipse-plugin"/>
+        <property name="download.md5" value="834e9d27c6506a5b161824e5fdb1a5d4"/>
+        <property name="download.checksum.md5" value="834e9d27c6506a5b161824e5fdb1a5d4"/>
+        <property name="download.checksum.sha-256" value="95ff48bd432aa5ae9e91ded5f210136e277828ca7aa3359241870fb81fbd865a"/>
+      </properties>
+    </artifact>
+    <artifact classifier="osgi.bundle" id="org.eclipse.wb.os.macosx" version="1.9.1.202210231159">
+      <properties size="9">
+        <property name="artifact.size" value="111894"/>
+        <property name="download.size" value="111894"/>
+        <property name="maven-groupId" value="org.eclipse.wb"/>
+        <property name="maven-artifactId" value="org.eclipse.wb.os.macosx"/>
+        <property name="maven-version" value="1.9.1-SNAPSHOT"/>
+        <property name="maven-type" value="eclipse-plugin"/>
+        <property name="download.md5" value="1a98637139e11759c57efffa3684c0c9"/>
+        <property name="download.checksum.md5" value="1a98637139e11759c57efffa3684c0c9"/>
+        <property name="download.checksum.sha-256" value="3003de0c080df0c17814fed8cb49be03a9c3fffc329d9a8a5e301e0b27dea81f"/>
+      </properties>
+    </artifact>
+    <artifact classifier="osgi.bundle" id="org.eclipse.wb.core.ui" version="1.10.0.202210231159">
+      <properties size="9">
+        <property name="artifact.size" value="59127"/>
+        <property name="download.size" value="59127"/>
+        <property name="maven-groupId" value="org.eclipse.wb"/>
+        <property name="maven-artifactId" value="org.eclipse.wb.core.ui"/>
+        <property name="maven-version" value="1.10.0-SNAPSHOT"/>
+        <property name="maven-type" value="eclipse-plugin"/>
+        <property name="download.md5" value="8d1768a220b6a179411b50dbd92279d3"/>
+        <property name="download.checksum.md5" value="8d1768a220b6a179411b50dbd92279d3"/>
+        <property name="download.checksum.sha-256" value="2753bf2ed6d7e63598ac1744080ca6729d605bcb9798002081b6888b82f9ed04"/>
+      </properties>
+    </artifact>
+    <artifact classifier="osgi.bundle" id="org.eclipse.wb.core.java" version="1.9.2.202210231159">
+      <properties size="9">
+        <property name="artifact.size" value="2367042"/>
+        <property name="download.size" value="2367042"/>
+        <property name="maven-groupId" value="org.eclipse.wb"/>
+        <property name="maven-artifactId" value="org.eclipse.wb.core.java"/>
+        <property name="maven-version" value="1.9.2-SNAPSHOT"/>
+        <property name="maven-type" value="eclipse-plugin"/>
+        <property name="download.md5" value="f429b6af1e23496eb6236d3b6a4c712c"/>
+        <property name="download.checksum.md5" value="f429b6af1e23496eb6236d3b6a4c712c"/>
+        <property name="download.checksum.sha-256" value="fb8995c76c9f64f36c790ff49ec7a84cde6c8a4723e27a560bf641f695c5a4df"/>
+      </properties>
+    </artifact>
+    <artifact classifier="osgi.bundle" id="org.eclipse.wb.swing.java6" version="1.9.1.202210231159">
+      <properties size="9">
+        <property name="artifact.size" value="91929"/>
+        <property name="download.size" value="91929"/>
+        <property name="maven-groupId" value="org.eclipse.wb"/>
+        <property name="maven-artifactId" value="org.eclipse.wb.swing.java6"/>
+        <property name="maven-version" value="1.9.1-SNAPSHOT"/>
+        <property name="maven-type" value="eclipse-plugin"/>
+        <property name="download.md5" value="26f4d4c227a4cbf5a062a601d90637e6"/>
+        <property name="download.checksum.md5" value="26f4d4c227a4cbf5a062a601d90637e6"/>
+        <property name="download.checksum.sha-256" value="431c9e2e646aad454e397634e678954f08b6ddd3889422741f9e124f9718659a"/>
+      </properties>
+    </artifact>
+    <artifact classifier="org.eclipse.update.feature" id="org.eclipse.wb.core.xml.feature" version="1.11.0.202210231159">
+      <properties size="10">
+        <property name="artifact.size" value="33810"/>
+        <property name="download.size" value="33810"/>
+        <property name="maven-groupId" value="org.eclipse.wb"/>
+        <property name="maven-artifactId" value="org.eclipse.wb.core.xml.feature"/>
+        <property name="maven-version" value="1.11.0-SNAPSHOT"/>
+        <property name="maven-type" value="eclipse-feature"/>
+        <property name="download.contentType" value="application/zip"/>
+        <property name="download.md5" value="99d58e4052eb704a47baee5120355a3e"/>
+        <property name="download.checksum.md5" value="99d58e4052eb704a47baee5120355a3e"/>
+        <property name="download.checksum.sha-256" value="73d8af9fe9212f604d0445543e1e49a94a4bc628d5301715c1e89383b6ab974b"/>
+      </properties>
+    </artifact>
+    <artifact classifier="org.eclipse.update.feature" id="org.eclipse.wb.swing.doc.user.feature" version="1.11.0.202210231159">
+      <properties size="10">
+        <property name="artifact.size" value="33776"/>
+        <property name="download.size" value="33776"/>
+        <property name="maven-groupId" value="org.eclipse.wb"/>
+        <property name="maven-artifactId" value="org.eclipse.wb.swing.doc.user.feature"/>
+        <property name="maven-version" value="1.11.0-SNAPSHOT"/>
+        <property name="maven-type" value="eclipse-feature"/>
+        <property name="download.contentType" value="application/zip"/>
+        <property name="download.md5" value="9816ac76dda7d714e317ebb71a146eda"/>
+        <property name="download.checksum.md5" value="9816ac76dda7d714e317ebb71a146eda"/>
+        <property name="download.checksum.sha-256" value="7059714662904dcc42bcc07ecc6fd65d32b6dcb42a3f8e0dcc5d36355ac33793"/>
+      </properties>
+    </artifact>
+    <artifact classifier="osgi.bundle" id="org.eclipse.wb.swing.jsr296" version="1.9.1.202210231159">
+      <properties size="9">
+        <property name="artifact.size" value="34597"/>
+        <property name="download.size" value="34597"/>
+        <property name="maven-groupId" value="org.eclipse.wb"/>
+        <property name="maven-artifactId" value="org.eclipse.wb.swing.jsr296"/>
+        <property name="maven-version" value="1.9.1-SNAPSHOT"/>
+        <property name="maven-type" value="eclipse-plugin"/>
+        <property name="download.md5" value="956d3c75bb6d10a0081c1bf38b531918"/>
+        <property name="download.checksum.md5" value="956d3c75bb6d10a0081c1bf38b531918"/>
+        <property name="download.checksum.sha-256" value="17e221607471efbc3d479cfa4d143cc77178bdfb5be3a35cbc9db12e865387bc"/>
+      </properties>
+    </artifact>
+    <artifact classifier="org.eclipse.update.feature" id="org.eclipse.wb.core.ui.feature" version="1.11.0.202210231159">
+      <properties size="10">
+        <property name="artifact.size" value="33786"/>
+        <property name="download.size" value="33786"/>
+        <property name="maven-groupId" value="org.eclipse.wb"/>
+        <property name="maven-artifactId" value="org.eclipse.wb.core.ui.feature"/>
+        <property name="maven-version" value="1.11.0-SNAPSHOT"/>
+        <property name="maven-type" value="eclipse-feature"/>
+        <property name="download.contentType" value="application/zip"/>
+        <property name="download.md5" value="27dd2bb1df345fe49f252cdc18544893"/>
+        <property name="download.checksum.md5" value="27dd2bb1df345fe49f252cdc18544893"/>
+        <property name="download.checksum.sha-256" value="2eb1633e9c305a29eac45ef33548b00f3f49e85b789740ea162c7d25d8f8c6a5"/>
+      </properties>
+    </artifact>
+    <artifact classifier="org.eclipse.update.feature" id="org.eclipse.wb.xwt.feature" version="1.11.0.202210231159">
+      <properties size="10">
+        <property name="artifact.size" value="33858"/>
+        <property name="download.size" value="33858"/>
+        <property name="maven-groupId" value="org.eclipse.wb"/>
+        <property name="maven-artifactId" value="org.eclipse.wb.xwt.feature"/>
+        <property name="maven-version" value="1.11.0-SNAPSHOT"/>
+        <property name="maven-type" value="eclipse-feature"/>
+        <property name="download.contentType" value="application/zip"/>
+        <property name="download.md5" value="e1c89f0c5eeee2f1b15278591099c7c9"/>
+        <property name="download.checksum.md5" value="e1c89f0c5eeee2f1b15278591099c7c9"/>
+        <property name="download.checksum.sha-256" value="a3f00b4196f47f4383469a61e1e29b706c50596439445b6d123b90708fde37bb"/>
+      </properties>
+    </artifact>
+  </artifacts>
+</repository>
